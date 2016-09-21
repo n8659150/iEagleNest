@@ -1,0 +1,235 @@
+
+/*
+ * Base structure
+ */
+html {
+    height: 100%;
+
+}
+
+body {
+  	background-color: rgb(241, 241, 241);
+    min-height: 100%;
+    position: relative;
+    min-width:1440px;
+    width:100%;
+}
+body:after {
+    content: '';
+    display: block;
+    height: 44px;
+}
+
+
+/*
+ * Global add-ons
+ */
+
+
+
+/*
+ * Placeholder dashboard ideas
+ */
+
+.placeholders {
+  margin-bottom: 30px;
+  text-align: center;
+}
+.placeholders h4 {
+  margin-bottom: 0;
+}
+.placeholder {
+  margin-bottom: 20px;
+}
+.placeholder img {
+  display: inline-block;
+  border-radius: 50%;
+}
+
+/*customize*/
+th {
+	text-align:center;
+}
+
+/*header style*/
+#header-wrapper {
+    background-color: #0E487F;
+    background-repeat: no-repeat;
+    margin: 0;
+    z-index: 100;
+}
+
+/*#header {
+	height: 122px;
+    margin: 0 auto;
+    position: relative;
+    width: 1056px;
+    z-index: 100;
+}*/
+
+#QUT-logo {
+	display: block;
+	height: 54px;
+	left: 0;
+	outline: none;
+	position: absolute;
+	/*	text-indent: -9999px;*/
+	top: 20px;
+	/*background: url(https://cms.qut.edu.au/__data/assets/image/0008/26945/student-logo.png) no-repeat 0 0;*/
+	width: 350px !important;
+}
+
+
+#QUT-top-search2 {
+	background: transparent url("https://www.student.qut.edu.au/__data/assets/image/0009/6984/global-sprite.png") no-repeat scroll 0px -338px;
+    height: 36px;
+    position: absolute;
+    right: 0px;
+/*    left: 60.5%;*/
+	left:875px;
+    top: 57px;
+    width: 380px;
+    z-index: 101;
+}
+
+/*.search-input {
+	background: none;
+	border: none;
+	color: #888;
+	float: left;
+	font-size: 1em;
+	font-weight: bold;
+	height: 22px;
+	line-height: 22px;
+	margin: 6px 3px;
+	width: 333px;
+}*/
+
+.search-input {
+	background: none;
+	border: none;
+	color: #888;
+	float: left;
+	font-size: 1em;
+	font-weight: bold;
+	height: 35px;
+	width: 339px;
+	margin-left: -14px;
+	padding-left: 12px;
+	padding-top: 2px;
+}
+
+
+#header-nav{
+/*    min-width: 1100px;*/
+	min-width:1440px;
+    margin: 0px auto;
+    /*border-bottom: 4px solid #e6e6e6;*/
+    height: 48px;
+    z-index: 100;
+    background:#EF6B3C none repeat scroll 0% 0%;
+}
+
+#menubar{
+	margin: 0 auto;
+	width: 1060px;
+	list-style:none;
+}
+
+.menuItem{
+	float: right;
+	right: 0;
+	position: relative;
+	top: 5px;
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+ }
+
+ .menuLink{
+ 	color: #fff;
+	display: block;
+	font-weight: bold;
+	float: left;
+	height: 33px;
+	text-align: center;
+	text-decoration:none;
+  	padding-top: 5px;
+ }
+
+ .menuLink:hover{
+ 	/*background-color:#225e92;*/
+ 	color: #fff;
+ 	text-decoration:none;
+ }
+
+ .menuLinkSpan{
+    display: block;
+    line-height: 18px;
+    padding: 0 15px;
+    position: relative;
+    top: 6px;
+ }
+
+#header-subnav{
+/*    min-width: 1100px;*/
+	min-width:1440px;
+    margin: 0px auto;
+    height: 70px;
+    z-index: 100;
+    background: #FFF none repeat scroll 0% 0%;
+    border-bottom: 2px solid rgba(165, 162, 162, 0.63);
+}
+
+
+ .footer {
+    background-color: #828181;
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	height: 44px;
+	float: none;
+	overflow: hidden;
+ }
+
+ .footer a {
+ 	color: #FFFFFF;
+    text-decoration: none;
+ }
+
+
+#footer-supplementary-wrapper {
+    width: 100%;
+    background-color: #828181;
+    line-height: normal;
+}
+
+#footer-supplementary {
+    min-height: 44px;
+    margin: 0 auto;
+    text-align: center;
+    font-size: 12px;
+    overflow: hidden;
+    color: #FFFFFF;
+    padding: 0 60px;
+}
+
+#footer-supplementary-information {
+    padding-top: 16px;
+}
+
+#footer-supplementary-information span {
+    margin-right: 8px;
+    padding-right: 8px;
+    line-height: normal;
+}
+
+.invoicebox {
+	height:480px;
+	background:white;
+	width:30%;
+	margin:18px;
+	border:1px solid #bdbdbd;
+	padding:0;
+}

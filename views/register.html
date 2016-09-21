@@ -1,0 +1,93 @@
+<head>
+
+  <!-- Custom styles for this template -->
+  <link href="style/login.css" rel="stylesheet">
+
+</head>
+
+<section class="card register">
+  <form name="myform"
+    ng-submit="register()"
+    novalidate>
+
+    <h1 class="loginheader">BreadTop Express</h1>
+    <div class="textintro">
+      <p class="message"
+        ng-show="message"> {{ message }}</p>
+    </div>
+
+    <fieldset  class="loginFieldSet">
+      <input class="qutinput" type="text" name="username" placeholder="Username"
+      ng-model="user.username" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.username.$invalid && myform.username.$touched">
+      Username required</p>
+
+      <input class="qutinput" type="password" name="password" placeholder="Password"
+      ng-model="user.password" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.password.$invalid && myform.password.$touched">
+      Password is required</p>
+
+      <input class="qutinput" type="text" name="firstname" placeholder="First Name"
+      ng-model="user.firstname" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.firstname.$invalid && myform.firstname.$touched">
+      First name required</p>
+
+      <input  class="qutinput" type="text" name="lastname" placeholder="Last Name"
+      ng-model="user.lastname" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.lastname.$invalid && myform.lastname.$touched">
+      Last name required</p>
+
+      <input class="qutinput" type="email" name="email" placeholder="Email"
+      ng-model="user.email" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.email.$invalid && myform.email.$touched">
+      Must be a valid email</p>
+
+      <input  class="qutinput" type="text" name="phonenumber" placeholder="Phone Number"
+      ng-model="user.phonenumber" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.phonenumber.$invalid && myform.phonenumber.$touched">
+      Phone number required</p>
+
+      <input  class="qutinput" type="text" name="companyname" placeholder="Company Name"
+      ng-model="user.companyname" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.companyname.$invalid && myform.companyname.$touched">
+      Company name required</p>
+
+      <input  class="qutinput" type="text" name="address" placeholder="Shipping Address"
+      ng-model="user.address" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.address.$invalid && myform.address.$touched">
+      Address required</p>
+
+      <Select class="qutinput" type="text" name="userlevel"
+      ng-model="user.userlevel" ng-required="true">
+        <option value="" selected disabled>Please select User Role</option>
+        <option>admin</option>
+        <option>Customer</option>
+        <option>staff</option>
+      </Select>
+      <p class="error validationerror"
+      ng-show="myform.userlevel.$invalid && myform.userlevel.$touched">
+      User level Not Selected</p>
+
+      <input  class="qutinput" type="text" name="usercredit" placeholder="User Credit"
+      ng-model="user.credit" ng-required="true">
+      <p class="error validationerror"
+      ng-show="myform.usercredit.$invalid && myform.usercredit.$touched">
+      User Credit required</p>
+
+    </fieldset>
+
+
+
+    <button type="submit" class="btn"
+    ng-disabled="myform.$invalid">Register</button>
+    <p style="margin:15px auto;">or <a ng-href="#/login">login</a></p>
+  </form>
+</section>
