@@ -7,6 +7,7 @@ myApp.controller('breadTopExpressController', ['$scope','$http','CRUD','$rootSco
       $scope.invoiceItems = CRUD.setToArray1(ref);
 			$scope.userinfos = CRUD.setToArray2(ref2);
 			$scope.invoice_history = CRUD.setToArray3(ref3);
+			console.log($scope.invoice_history);
       $scope.currentInvoiceItem = {};
 			$scope.currentInvoicePDF = {};
       $scope.newInvoice = {};
@@ -682,9 +683,10 @@ myApp.controller('breadTopExpressController', ['$scope','$http','CRUD','$rootSco
 
 				}
 
-				$scope.openSelectedInvoicePDF = function(invoiceId){
+				$scope.openSelectedInvoicePDF = function(invoiceStatus,invoiceId){
 
-					var invoiceRecord = $scope.invoice_history.$getRecord(invoiceId);
+					var invoiceRecord = invoiceStatus.$getRecord(invoiceId);
+					console.log(invoiceRecord);
 
 					var invoiceNo = invoiceRecord.invoiceNo.toString();
 

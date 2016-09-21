@@ -600,7 +600,7 @@
                                   <td>$ {{invoice.totalprice.toFixed(2)}}</td>
                                   <td>{{invoice.invoiceStatus}}</td>
                                   <td>
-                                    <a  ng-click="openSelectedInvoicePDF(invoice.$id)" style="width: 55%;cursor:pointer;">View Detail</a>
+                                    <a  ng-click="openSelectedInvoicePDF(invoice_history,invoice.$id)" style="width: 55%;cursor:pointer;">View Detail</a>
                                 </td>
                                 </tr>
 
@@ -613,7 +613,7 @@
                                   <td>$ {{invoice.totalprice.toFixed(2)}}</td>
                                   <td>{{invoice.invoiceStatus}}</td>
                                   <td>
-                                    <a  ng-click="openSelectedInvoicePDF(invoice.$id)" style="width: 55%;cursor:pointer;">View Detail</a>
+                                    <a  ng-click="openSelectedInvoicePDF(invoice_history,invoice.$id)" style="width: 55%;cursor:pointer;">View Detail</a>
                                 </td>
                                 </tr>
 
@@ -1153,7 +1153,7 @@
               <td>{{invoice.invoiceStatus}}</td>
               <td>{{invoice.deliveryStatus}}</td>
               <td>
-                <a  ng-click="openSelectedInvoicePDF(invoice.$id)" style="width: 55%;cursor:pointer;">View Detail</a>
+                <a  ng-click="openSelectedInvoicePDF(invoiceItems,invoice.$id)" style="width: 55%;cursor:pointer;">View Detail</a>
                 <button style="font-size: 13px;width: 45%;border-radius: 6px;padding: 3px 4px;display: inline-block;float: right;" ng-if="invoice.invoiceStatus != 'PAID'"class="btn btn-success btn-lg btn-block" data-toggle="modal"
                 data-target="#mainForm" ng-click="setSelectedInvoiceItem(invoice.$id)">
                     Edit
